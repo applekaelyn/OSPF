@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>链路状态路由算法的实现</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/playground.css"/>
+	<link rel="stylesheet" type="text/css" href="css/buttons.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="SHORTCUT ICON" href="favicon.ico"/>
+	<body>
+		<canvas id="canvas" width="300" height="150"></canvas>
+		
+		<!--右键菜单-->
+		 <ul class="contextmenu routerMeun" style="display:none;">	
+			<li><a>连接</a></li>
+			<li><a>查看路由表</a></li>
+			<li><a>删除该路由</a></li>
+	  	</ul>
+	  	<ul class="contextmenu edgeMeun" style="display:none;">	
+			<li><a>删除该连接</a></li>
+			<li><a>修改代价</a></li>
+	  	</ul>
+
+		
+		<!--显示路由表-->
+		<div class="routerTable hide" onselectstart="return false">
+			<div><span>路由表</span><img src="img/cancel.png" class="cancel"></img></div>
+		</div>
+		
+		<!--功能按钮-->
+		<div class="buttons">
+			<a class="large Blue Button newRouter" onselectstart="return false">新建路由器</a>
+			<a class="large Red Button refresh" onselectstart="return false">刷新</a>
+			<a class="large Green Button clear" onselectstart="return false">清空</a>
+		</div>
+		
+		<!--修改代价-->
+		<div class="editCost hide">
+			<div><span>代价</span></div>
+			<input type="text" class="cost" value="" placeholder="请输入代价值"/>
+			<div><a class="button cost_enter xs">确定</a></div>
+		</div>
+		
+		<!--新建路由器-->
+		<div class="inputRouter hide">
+			<div><span>路由器</span></div>
+			<input type="text" class="routerName" value="" placeholder="路由器名称"/>
+			<div><a class="button name_enter xs">确定</a></div>
+		</div>
+		
+		<script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/request.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Dijkstar.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jtopo-0.4.8-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

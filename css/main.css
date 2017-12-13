@@ -1,0 +1,243 @@
+.hide {
+  display: none; }
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.contextmenu {
+  border: 1px solid #aaa;
+  border-bottom: 0;
+  background: #eee;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none; }
+  .contextmenu li a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #aaa;
+    cursor: pointer; }
+  .contextmenu li a:hover {
+    background: #fff; }
+
+.routerTable {
+  position: absolute;
+  left: 500px;
+  top: 200px;
+  text-align: center;
+  background-color: #FFF;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 18px #ffb515; }
+  .routerTable div {
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    background-color: #ffb515;
+    height: 25px;
+    text-align: center; }
+    .routerTable div span {
+      position: relative;
+      top: 3px;
+      left: 10px;
+      font-family: KaiTi;
+      font-size: 20px;
+      font-weight: bold; }
+  .routerTable .cancel {
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 3px; }
+  .routerTable .table {
+    text-align: center;
+    z-index: 100; }
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: solid #007D9A 2px;
+  text-align: center;
+  padding: 0 10px;
+  width: 110px;
+  height: 25px;
+  line-height: 23px;
+  font-size: 18px;
+  font-family: KaiTi; }
+
+.editCost {
+  position: absolute;
+  left: 600px;
+  top: 200px;
+  width: 150px;
+  height: 130px;
+  text-align: center;
+  background-color: #FFF;
+  z-index: 100;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 18px #ffb515; }
+  .editCost div:nth-child(1) {
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    background-color: #ffb515;
+    height: 25px;
+    text-align: center;
+    font-family: KaiTi;
+    font-size: 20px;
+    font-weight: bold; }
+  .editCost input {
+    margin-top: 20px; }
+  .editCost .cost_enter {
+    text-align: center;
+    margin-top: 15px; }
+
+.inputRouter {
+  position: absolute;
+  left: 600px;
+  top: 200px;
+  width: 150px;
+  height: 130px;
+  text-align: center;
+  background-color: #FFF;
+  z-index: 100;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 18px #ffb515; }
+  .inputRouter div:nth-child(1) {
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    background-color: #ffb515;
+    height: 25px;
+    text-align: center;
+    font-family: KaiTi;
+    font-size: 20px;
+    font-weight: bold; }
+  .inputRouter input {
+    margin-top: 20px; }
+  .inputRouter .name_enter {
+    text-align: center;
+    margin-top: 15px; }
+
+.buttons {
+  float: right;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
+
+@-webkit-keyframes bigAssButtonPulse {
+  from {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 25px #333; }
+  50% {
+    background-color: #91bd09;
+    -webkit-box-shadow: 0 0 50px #91bd09; }
+  to {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 25px #333; } }
+@-webkit-keyframes greenPulse {
+  from {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 9px #333; }
+  50% {
+    background-color: #91bd09;
+    -webkit-box-shadow: 0 0 18px #91bd09; }
+  to {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 9px #333; } }
+@-webkit-keyframes bluePulse {
+  from {
+    background-color: #007d9a;
+    -webkit-box-shadow: 0 0 9px #333; }
+  50% {
+    background-color: #2daebf;
+    -webkit-box-shadow: 0 0 18px #2daebf; }
+  to {
+    background-color: #007d9a;
+    -webkit-box-shadow: 0 0 9px #333; } }
+@-webkit-keyframes redPulse {
+  from {
+    background-color: #bc330d;
+    -webkit-box-shadow: 0 0 9px #333; }
+  50% {
+    background-color: #e33100;
+    -webkit-box-shadow: 0 0 18px #e33100; }
+  to {
+    background-color: #bc330d;
+    -webkit-box-shadow: 0 0 9px #333; } }
+@-webkit-keyframes magentaPulse {
+  from {
+    background-color: #630030;
+    -webkit-box-shadow: 0 0 9px #333; }
+  50% {
+    background-color: #a9014b;
+    -webkit-box-shadow: 0 0 18px #a9014b; }
+  to {
+    background-color: #630030;
+    -webkit-box-shadow: 0 0 9px #333; } }
+@-webkit-keyframes orangePulse {
+  from {
+    background-color: #d45500;
+    -webkit-box-shadow: 0 0 9px #333; }
+  50% {
+    background-color: #ff5c00;
+    -webkit-box-shadow: 0 0 18px #ff5c00; }
+  to {
+    background-color: #d45500;
+    -webkit-box-shadow: 0 0 9px #333; } }
+@-webkit-keyframes orangellowPulse {
+  from {
+    background-color: #fc9200;
+    -webkit-box-shadow: 0 0 9px #333; }
+  50% {
+    background-color: #ffb515;
+    -webkit-box-shadow: 0 0 18px #ffb515; }
+  to {
+    background-color: #fc9200;
+    -webkit-box-shadow: 0 0 9px #333; } }
+a.Button {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite; }
+
+.Green.Button {
+  -webkit-animation-name: greenPulse;
+  -webkit-animation-duration: 3s; }
+
+.Blue.Button {
+  -webkit-animation-name: bluePulse;
+  -webkit-animation-duration: 4s; }
+
+.Red.Button {
+  -webkit-animation-name: redPulse;
+  -webkit-animation-duration: 1s; }
+
+.magenta.button {
+  -webkit-animation-name: magentaPulse;
+  -webkit-animation-duration: 2s; }
+
+.orange.button {
+  -webkit-animation-name: orangePulse;
+  -webkit-animation-duration: 3s; }
+
+.orangellow.button {
+  -webkit-animation-name: orangellowPulse;
+  -webkit-animation-duration: 5s; }
+
+.wall-of-buttons {
+  width: 100%;
+  height: 180px;
+  text-align: center; }
+
+.wall-of-buttons a.Button {
+  display: inline-block;
+  margin: 0 10px 9px 0; }
+
+/*# sourceMappingURL=main.css.map */
